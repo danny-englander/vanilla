@@ -1,4 +1,4 @@
-# Webm / MP3 Video custom code
+# Custom EventListener for HTML5 video
 
 This code below queries the state of an HTML5 video. The video has pause and play buttons that have click events. We swap the buttons depending on the state of play.
 

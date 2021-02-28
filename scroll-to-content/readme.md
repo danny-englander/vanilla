@@ -3,14 +3,14 @@
 This code shows and example of scrolling to content when a button is clicked within a hero at the top of the page. There is also an A11y add-on to assist with keyboard navigation.
 
 ```javascript
-// Define the element for the scroller.
+// Define the scroller elements.
 const scroller = document.getElementById('content-scroller');
-
+const scroller_target = document.getElementById("content-target")
 // Check for the scroller.
 if (scroller) {
   scroller.addEventListener('click', function () {
     // Target the anchor to be scrolled to.
-    scrollTo(document.getElementById("content-target"));
+    scrollTo(scroller_target);
   });
 
   // A11y add-on.
@@ -21,4 +21,13 @@ if (scroller) {
     }
   });
 }
+
+// Custom scrollTo function.
+  scrollTo = (element) => {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: element.offsetTop
+    });
+  };
  ```

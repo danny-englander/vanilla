@@ -5,4 +5,5 @@ This is a repository where I am tracking my learning of vanilla javascript. I've
 ## Code Examples
 
 1. [Webm / MP3 Video custom code](webm-mp3-video/readme.md)
-1. [Local Storage](local-storage/readme.md)
+1. [Local storage](local-storage/readme.md)
+1. [Scroll to content](scroll-to-content/readme.md)
